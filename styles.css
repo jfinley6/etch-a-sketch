@@ -1,0 +1,29 @@
+body {
+    margin: 0;
+}
+
+h1 {
+    font-size: 50px;
+    display: flex;
+    justify-content: center;
+}
+
+.content {
+    display: flex;
+    justify-content: center;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(100, 1fr);
+    grid-template-rows: repeat(100, 1fr);
+    grid-column-gap: 1px;
+    grid-row-gap: 1px;
+    width: 400px;
+    height: 400px;
+
+}
+
+.grid {
+    background-color: black;
+}
