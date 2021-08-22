@@ -29,7 +29,9 @@ label {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
+    margin: auto;
     margin-top: 40px;
+    width: 656px;
 }
 
 .rowColumnButton {
@@ -39,6 +41,12 @@ label {
     font-size: 16px;
     background-color: rgb(141, 126, 126);
     color: white;
+    padding: 0px;
+}
+
+.rowColumnButton:hover {
+    border-radius: 5px;
+    cursor: pointer;
 }
 
 #colorButton {
@@ -60,7 +68,4 @@ label {
     background-color: white;
 }
 
-.colorHover {
-    background-color: var(--grid-color);
-}
 

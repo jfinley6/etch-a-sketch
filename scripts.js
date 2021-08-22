@@ -32,7 +32,7 @@ function setGrid(number) {     //Sets the amount of rows/columns
     createDiv(Math.pow(number, 2))
 }
 
-function chooseRowsColumns() {
+function chooseRowsColumns() {        
     queryDiv();
     gridSquares.forEach(function(gridSquare) {
         gridSquare.style.backgroundColor = "white";
@@ -41,7 +41,7 @@ function chooseRowsColumns() {
     if (isNaN(selection)) {
         chooseRowsColumns();
     }
-    if (selection < 0 || selection > 100) {
+    if (selection <= 0 || selection > 100) {
         chooseRowsColumns();
     }
     if (selection === "" || !selection) {
@@ -57,14 +57,14 @@ function chooseRowsColumns() {
     });
 }
 
-function resetGrid() {
+function resetGrid() {       //Resets the grid so that each square is white
     gridSquares.forEach(function(gridSquare) {
         gridSquare.style.backgroundColor = "white";
 })
 }
 
 
-input.onchange = function() {
+input.onchange = function() {       //When a user changes the color, this will update the RGB value
     RGB = this.value;
   }
 
