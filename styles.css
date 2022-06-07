@@ -1,71 +1,90 @@
-:root {
-    --grids: 16;
-    
+html {
+  -ms-transform: scale(0.6, 0.6); /* IE 9 */
+  -webkit-transform: scale(0.6, 0.7); /* Safari */
+  transform: scale(0.6, 0.6);
+  transform-origin: top;
+  width: 100vw;
+  height: 100vh;
+  background-color: #11a9e2;
+}
+
+#backButton {
+  background-color: #eeeeee;
+  padding: 8px 20px;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 2rem;
+  color: black;
 }
 
 body {
-    margin: 0;
+    background-color: white;
+    padding-bottom: 10px;
+}
+
+:root {
+  --grids: 16;
 }
 
 h1 {
-    font-size: 50px;
-    display: flex;
-    justify-content: center;
-    color: black;
+  font-size: 50px;
+  display: flex;
+  justify-content: center;
+  color: black;
 }
 
 label {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .content {
-    display: flex;
-    justify-content: center;
+  display: flex;
+  justify-content: center;
 }
 
 .buttonContainer {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    margin: auto;
-    margin-top: 40px;
-    width: 656px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin: auto;
+  margin-top: 40px;
+  width: 656px;
 }
 
 .rowColumnButton {
-    width: 150px;
-    font-family:Arial, Helvetica, sans-serif;
-    font-weight: bold;
-    font-size: 16px;
-    background-color: rgb(141, 126, 126);
-    color: white;
-    padding: 0px;
+  width: 150px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  font-size: 16px;
+  background-color: rgb(141, 126, 126);
+  color: white;
+  padding: 0px;
 }
 
 .rowColumnButton:hover {
-    border-radius: 5px;
-    cursor: pointer;
+  border-radius: 5px;
+  cursor: pointer;
 }
 
 #colorButton {
-    height: 40px;
-    margin-top: 10px;
-    padding: 0px;
+  height: 40px;
+  margin-top: 10px;
+  padding: 0px;
 }
 
 .container {
-    display: grid;
-    grid-template-columns: repeat(var(--grids), 1fr);
-    grid-template-rows: repeat(var(--grids), 1fr);
-    width: 550px;
-    height: 550px;
-    border-style: solid;
+  display: grid;
+  grid-template-columns: repeat(var(--grids), 1fr);
+  grid-template-rows: repeat(var(--grids), 1fr);
+  width: 550px;
+  height: 550px;
+  border-style: solid;
 }
 
 .grid {
-    background-color: white;
+  background-color: rgb(253, 253, 253);
 }
-
-
